@@ -1,0 +1,353 @@
+/*
+ * 在这里编辑主页的样式表
+ */
+
+/*
+ * 设置body
+ */
+body{
+	/*设置网页背景图片 方式-->水平平铺*/
+	background: url(../images/bd-bg.png) repeat-x;
+}
+
+/*解决高度塌陷问题：清除浮动*/
+.clearfix:before,
+.clearfix:before,{
+	content: '';
+	display: table;
+	clear:both;
+}
+.clearfix{
+	zoom:1;
+}
+
+/*固定整个元素的居中和宽度*/
+.w{
+	width: 940px;
+	margin: 0 auto;
+}
+
+/*设置header*/
+.header{
+	/*background: #bfa;*/
+	/*设置上内边距*/
+	padding-top: 37px;
+	/*再设置一个下内边距*/
+	padding-bottom: 46px;
+}
+/*设置logo的位置*/
+.logo{
+	margin-left: 15px;
+}
+.nav{
+	/*设置整体向右浮动*/
+	float: right;
+	/*设置一个上外边距*/
+	margin-top: 22px;
+
+}
+.nav li{
+	/*设置左右内边距*/
+	padding:0px 10px 8px;
+	/*设置向左浮动*/
+	float: left;
+	/*设置字体颜色*/
+	color:#c7c7c7;
+	/*设置字体大小*/
+	font:11px Tahoma;
+	/*设置左边框*/
+	border-left:1px dotted #d6d6d6;
+}
+.nav a{
+	/*设置字体颜色和大小*/
+	color: #808080;
+	font:Bold 14px Georgia;
+	/*去除下划线*/
+	text-decoration: none;
+}
+.nav a:hover{
+	/*设置鼠标移入效果*/
+	color: #a1a1a1;
+	text-decoration: underline;
+}
+
+/*设置中间的轮播图css*/
+.lunbo{
+	/*开启一个相对定位*/
+	position: relative;
+	/*设置高度*/
+	height: 356px;
+	/*设置背景*/
+	background: url(../images/lunbo/bunner_bg.png) no-repeat bottom center;
+}
+/*设置轮播图中的按钮*/
+.dot{
+	/*开启绝对定位*/
+	position: absolute;
+	/*为导航点进行定位*/
+	bottom: 25px;
+	left: 15px;
+}
+.dot a{
+	/*设置a浮动*/
+	float: left;
+	/*设置宽度和高度*/
+	width: 17px;
+	height: 17px;
+	/*设置按钮的背景图片*/
+	background: url(../images/lunbo/dot.png) no-repeat;
+	/*设置一个左外边距*/
+	margin-right:4px; 
+}
+/*设置鼠标移入导航点的样式*/
+.dot .active,
+.dot a:hover{
+	background: url(../images/lunbo/dot2.png) no-repeat;
+}
+.content{
+	height: 938px;
+	/*background: #bfa;*/
+}
+/*设置content部分*/
+.content h1{
+	/*设置文本居中*/
+	text-align: center;
+	/*设置字体大小和颜色*/
+	font:bold 24px Georgia; 
+	/*设置上下内边距*/
+	padding: 6px 0 20px 0px;
+	/*设置一个下外边距*/
+	margin-bottom: 38px;
+	/*设置背景*/
+	background: url(../images/hr.png) no-repeat bottom center;	
+}
+
+
+
+.content .pl,.content .cs,.content .uc,
+.content .sc,.content .co,.content .nu{
+	/*设置向左浮动*/
+	float: left;
+	/*宽度统一设置*/
+	width: 300px;
+}
+
+/*给div添加左右边距*/
+.content .cs,.content .co{
+	margin: 0 20px;
+}
+
+/*设置div中的标题*/
+.p2{font:21px Georgia;color:#11719e;margin-left: 4px;margin-bottom: 3px;}
+.p3{font:12px Helvetica;color: #bfbfbf;margin-left:4px; }
+
+/*设置图片*/
+.imgDiv{
+	/*设置宽高*/
+	width: 299px;
+	height: 190px;
+	/*设置外边距*/
+	margin: 15px 0px 10px 0px;
+	/*设置背景图片*/
+	background: url(../images/pl-bg.jpg) no-repeat;
+	/*设置上内边距*/
+	padding-top: 12px;
+	/*设置水平居中*/
+	text-align: center;
+}
+
+.content .p4{
+	/*设置字体*/
+	height: 87px;
+	font:13px Helvetica;
+	color:#3e3e3e;
+	word-spacing: 7px;
+}
+
+/*设置按钮*/
+.content .lm{
+	display: block;
+	height: 40px;
+	width: 163px;
+	background: url(../images/btn.png) no-repeat;
+	margin:20px 0 78px 0px;
+    text-indent: 1em;
+	
+}
+.content a{
+	font: 12px/40px Helvetica;
+	color: #016999;
+	text-decoration: none;
+}
+.content a:hover{
+	text-decoration: underline;
+}
+
+.content .p5{
+	/*设置字体*/
+	font:18px Georgia;
+	color:#444444; 
+}
+.content .p6{
+	/*设置横线*/
+	font:12px Verdana;
+	color:#d3d3d3;
+}
+
+
+ :-moz-placeholder {
+			font:10px Verdana;
+            color: #d4d4d4;
+            opacity: 1;
+        }
+        
+::-moz-placeholder {
+	font:10px Verdana;
+    color: #d4d4d4;
+    opacity: 1;
+}
+
+input:-ms-input-placeholder {
+	font:10px Verdana;
+    color: #d4d4d4;
+    opacity: 1;
+}
+
+input::-webkit-input-placeholder {
+	font:10px Verdana;
+    color: #b1babf;
+    opacity: 1;
+}
+
+textarea:-ms-input-placeholder {
+	font:10px Verdana;
+    color: #d4d4d4;
+    opacity: 1;
+}
+
+textarea::-webkit-input-placeholder {
+	font:10px Verdana;
+    color: #b1babf;
+    opacity: 1;
+}
+
+
+/*设置input输入框*/
+.content .text{
+	height: 33px;
+	width: 276px;
+	/*设置行高*/
+	line-height: 33px;
+	/*设置背景图片*/
+	background: url(../images/input.png) no-repeat;
+	/*去除默认样式*/
+	border: none;
+
+	/*去除默认的内边框*/
+	padding: 0 10px;
+	margin-top:17px;
+
+}
+.content .tarea{
+	height: 114px;
+	width: 276px;
+	/*设置背景图片*/
+	background: url(../images/tarea.png) no-repeat;
+
+	/*去除默认样式*/
+	border: none;
+	/*去除滚动条*/
+	overflow: auto;
+	/*文本框不能设置大小*/
+	resize: none;
+	/*去除默认的内边框*/
+	padding: 10px;
+	margin-top:17px;
+	margin-bottom: 8px;
+
+}
+
+.content .btn{
+	display: inline-block;
+	height: 32px;
+	width: 163px;
+	background: url(../images/btn01.png);
+	line-height: 33px;
+	text-indent: 13px;
+
+
+}
+.content .btn a{
+	color: white;
+	font:13px Georgia;
+}
+.content .btn a:hover{
+	color: #c6c1c1;
+}
+
+.content .p1{
+	font:12px Helvetica;
+	padding-top: 11px;
+	color:#444;
+
+	/*设置上内边距和下内边距*/
+	padding-top: 13px;
+	padding-bottom: 7px;
+}
+.icons a{
+	font-size: 0px;
+}
+
+
+.sc .p2{
+	font:bold 18px 'Gill Sans MT';
+	color:#444;
+	margin-bottom: 0px;
+}
+.sc .text{
+	margin: 12px 0px 11px 0px;
+}
+
+.nu img{
+	float: left;
+	margin-right: 8px;
+}
+.nu .img{
+	height:58px;
+	margin-bottom: 24px;
+}
+
+.nu .p6{
+	margin-bottom: 15px;
+}
+.nu .no-margin{
+	margin-bottom: 0px;
+}
+
+/*设置底部样式*/
+
+.footer{
+	height:173px;
+	background-color: #333;
+	border-top: 10px solid #4c4c4c;
+}
+.footer .w{
+	padding:17px 23px 0px 59px;
+	font:11px Helvetica;
+	color:#999;
+
+}
+.footer p{
+	margin-bottom: 12px;
+}
+.footer .w a{
+	text-decoration: none;
+	color: #999;
+}
+.footer .w a:hover{
+	color: #dbd7d7;
+	text-decoration: underline;
+}
+.copy{
+	float: right;
+}
